@@ -1,0 +1,11 @@
+
+.program uart_tx
+.side_set 1 opt
+
+start:
+    pull       side 1 [7]
+    set x, 7   side 0 [7]
+bit_loop:                   
+    out pins, 1            
+    jmp x-- bit_loop   [6]
+
