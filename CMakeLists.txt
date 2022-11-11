@@ -21,7 +21,6 @@ target_compile_options(${PROJECT_NAME} PRIVATE -Wall)
 target_link_libraries(${PROJECT_NAME} 
     pico_stdlib
     pio_uart
-    hardware_uart
 )
 
 pico_enable_stdio_usb(${PROJECT_NAME} 1)
